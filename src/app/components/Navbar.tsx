@@ -1,4 +1,5 @@
 import { Search, ShoppingCart, User, Menu, X } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -53,7 +54,7 @@ export default function Navbar() {
               <a className="hover:text-gray-900 transition-colors">Tables</a>
             </li>
             <li>
-              <a className="hover:text-gray-900 transition-colors">Chairs</a>
+            <Link href={"/about"} className="hover:text-gray-900 transition-colors">Chairs</Link>  
             </li>
             <li>
               <a className="hover:text-gray-900 transition-colors">Crockery</a>
