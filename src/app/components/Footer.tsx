@@ -1,5 +1,6 @@
 import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter, FaSkype, FaPinterest } from "react-icons/fa";
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -53,14 +54,16 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Our company</h3>
             <ul className="space-y-2">
               {[
-                "About us",
-                "Vacancies",
-                "Contact us",
-                "Privacy",
-                "Returns policy",
-              ].map((item) => (
-                <li key={item}>
-                  <a className="hover:opacity-80 transition-opacity">{item}</a>
+                { label: "About us", href: "/about" },
+                { label: "Vacancies", href: "/vacancies" },
+                { label: "Contact us", href: "/contact" },
+                { label: "Privacy", href: "/privacy" },
+                { label: "Returns policy", href: "/returns-policy" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <Link href={href} className="hover:opacity-80 transition-opacity">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>

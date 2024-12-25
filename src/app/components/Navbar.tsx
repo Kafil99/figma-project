@@ -54,7 +54,7 @@ export default function Navbar() {
               <a className="hover:text-gray-900 transition-colors">Tables</a>
             </li>
             <li>
-            <Link href={"/about"} className="hover:text-gray-900 transition-colors">Chairs</Link>  
+            <Link href={"/chairs"} className="hover:text-gray-900 transition-colors">Chairs</Link>  
             </li>
             <li>
               <a className="hover:text-gray-900 transition-colors">Crockery</a>
