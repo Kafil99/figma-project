@@ -20,7 +20,7 @@ export default function StorySection() {
 
       <div className="w-full md:w-1/2 min-h-[400px] md:min-h-[600px]">
         <img
-          src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="/Images/yellowchair.png"
           alt="Modern interior with yellow armchair and minimalist artwork"
           className="w-full h-full object-cover"
         />
